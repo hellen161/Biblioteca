@@ -38,6 +38,11 @@
 
     <table class="table">
         <thead>
+            <th scope="col">Editar</th>
+             
+            <td><a href="editar/{{ livros.id }}" class="btn
+                btn-warning">Editar</a></td> 
+
             <tr>
                 <th scope="col">Nome</th>
                 <th scope="col">Autor</th>
@@ -48,7 +53,7 @@
                 <th scope="col">Status</th>
                 <th scope="col">Excluir</th>
             </tr>
-        </thead>
+            
         <tbody>
                 {% for livro in livros %}
                 <tr>
@@ -68,6 +73,7 @@
                     </td>
                 </tr>
             {% endfor %}
+            
         </tbody>
     </table>
     
