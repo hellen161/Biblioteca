@@ -38,22 +38,22 @@
 
     <table class="table">
         <thead>
-            <th scope="col">Editar</th>
-             
-            <td><a href="editar/{{ livros.id }}" class="btn
-                btn-warning">Editar</a></td> 
-
-            <tr>
-                <th scope="col">Nome</th>
-                <th scope="col">Autor</th>
-                <th scope="col">Editora</th>
-                <th scope="col">Gênero</th>
-                <th scope="col">Preço</th>
-                <th scope="col">Data Publicação</th>
-                <th scope="col">Status</th>
-                <th scope="col">Excluir</th>
-            </tr>
             
+            <th scope="col">Editar</th>
+            <td><a href="editar/{{ livros.id }}" class="btn
+                btn-warning">Editar</a>
+            
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Autor</th>
+                    <th scope="col">Editora</th>
+                    <th scope="col">Gênero</th>
+                    <th scope="col">Preço</th>
+                    <th scope="col">Data Publicação</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Excluir</th>
+                </tr>
+            </td>
         <tbody>
                 {% for livro in livros %}
                 <tr>
